@@ -75,11 +75,18 @@ export default function Home() {
                 then extended to cloud technologies. Today, I try to combine the
                 two under the <strong>DevOps</strong> umbrella.
               </p>
-              <Button asChild size="sm">
-                <Link href="https://github.com/RedbeanGit" target="_blank">
-                  See my Github
-                </Link>
-              </Button>
+              <div className="flex items-center">
+                <Button asChild size="sm">
+                  <Link href="https://github.com/RedbeanGit" target="_blank">
+                    See my Github
+                  </Link>
+                </Button>
+                <Button asChild size="sm" variant="link">
+                  <Link href="/cv.pdf" target="_blank">
+                    Download my CV
+                  </Link>
+                </Button>
+              </div>
             </div>
             <div className="flex justify-center">
               <Image
