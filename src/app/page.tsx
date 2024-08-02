@@ -58,9 +58,23 @@ export default function Home() {
               Contact
             </Link>
           </nav>
-          <Button asChild className="md:hidden" size="sm" variant="outline">
-            <Link href="#">Get in Touch</Link>
-          </Button>
+          <Link
+            href="https://github.com/RedbeanGit"
+            target="_blank"
+            title="My Github profile"
+          >
+            <Image
+              alt="Redbean Logo"
+              className="rounded-full"
+              width={30}
+              height={30}
+              src="/redbean.webp"
+              style={{
+                aspectRatio: "30/30",
+                objectFit: "cover",
+              }}
+            />
+          </Link>
         </div>
       </header>
       <main className="flex-1">
@@ -310,9 +324,9 @@ export default function Home() {
         </section>
       </main>
       <footer className="bg-gray-900 text-white py-6 px-4 md:px-8 lg:px-12">
-        <div className="container mx-auto flex justify-between items-center">
+        <div className="container mx-auto flex justify-between items-center flex-col sm:flex-row">
           <p className="text-sm">© 2024 Julien Dubois</p>
-          <div className="flex space-x-4">
+          <div className="flex mt-4 sm:mt-0 sm:space-x-4 flex-col sm:flex-row items-center">
             <Link
               className="hover:underline"
               href="https://www.linkedin.com/in/julien-dubois-it/"
