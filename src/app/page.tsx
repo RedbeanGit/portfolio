@@ -58,23 +58,6 @@ export default function Home() {
               Contact
             </Link>
           </nav>
-          <Link
-            href="https://github.com/RedbeanGit"
-            target="_blank"
-            title="My Github profile"
-          >
-            <Image
-              alt="Redbean Logo"
-              className="rounded-full"
-              width={30}
-              height={30}
-              src="/redbean.webp"
-              style={{
-                aspectRatio: "30/30",
-                objectFit: "cover",
-              }}
-            />
-          </Link>
         </div>
       </header>
       <main className="flex-1">
