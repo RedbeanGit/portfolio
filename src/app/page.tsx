@@ -93,6 +93,7 @@ export default function Home() {
                 width={300}
                 height={300}
                 src="/me.webp"
+                priority={true}
                 style={{
                   aspectRatio: "300/300",
                   objectFit: "cover",
@@ -114,8 +115,8 @@ export default function Home() {
                     alt="Meetmapper"
                     className="rounded-t-lg"
                     src="/meetmapper.webp"
-                    width={1920}
-                    height={1080}
+                    width={960}
+                    height={540}
                     style={{
                       aspectRatio: "16/9",
                       objectFit: "cover",
@@ -146,8 +147,8 @@ export default function Home() {
                     alt="Lambdo"
                     className="rounded-t-lg"
                     src="/lambdo.webp"
-                    width={1920}
-                    height={1080}
+                    width={960}
+                    height={540}
                     style={{
                       aspectRatio: "16/9",
                       objectFit: "cover",
@@ -179,8 +180,8 @@ export default function Home() {
                     alt="BeOp"
                     className="rounded-t-lg"
                     src="/beop.webp"
-                    width={1920}
-                    height={1080}
+                    width={960}
+                    height={540}
                     style={{
                       aspectRatio: "16/9",
                       objectFit: "cover",
