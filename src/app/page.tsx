@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Chivo, Rubik } from "next/font/google";
@@ -15,7 +16,7 @@ import CloudIcon from "@/components/icons/cloud";
 import TypeIcon from "@/components/icons/type";
 import TerraformIcon from "@/components/icons/terraform";
 import NextjsIcon from "@/components/icons/nextjs";
-import { useState } from "react";
+import KubernetesIcon from "@/components/icons/kubernetes";
 
 const rubik = Rubik({
   subsets: ["latin"],
@@ -66,11 +67,11 @@ export default function Home() {
             <div>
               <h2 className="text-3xl font-bold mb-4">About Me</h2>
               <p className="text-gray-600 dark:text-gray-400 mb-6">
-                Currently an apprentice IT engineer at the end of my degree
-                course, and working at BeOp as a DevOps engineer in parallel.
                 Having initially nurtured a passion for development, my interest
                 then extended to cloud technologies. Today, I try to combine the
-                two under the <strong>DevOps</strong> umbrella.
+                two under the <strong>DevOps</strong> umbrella. I&apos;m
+                currently working at BeOp (becoming Collective Audience) as a
+                DevOps engineer.
               </p>
               <div className="flex items-center">
                 <Button asChild size="sm">
@@ -109,10 +110,12 @@ export default function Home() {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
               <Card>
                 <CardContent>
-                  <img
+                  <Image
                     alt="Meetmapper"
                     className="rounded-t-lg"
                     src="/meetmapper.webp"
+                    width={1920}
+                    height={1080}
                     style={{
                       aspectRatio: "16/9",
                       objectFit: "cover",
@@ -139,10 +142,12 @@ export default function Home() {
               </Card>
               <Card>
                 <CardContent>
-                  <img
+                  <Image
                     alt="Lambdo"
                     className="rounded-t-lg"
                     src="/lambdo.webp"
+                    width={1920}
+                    height={1080}
                     style={{
                       aspectRatio: "16/9",
                       objectFit: "cover",
@@ -170,10 +175,12 @@ export default function Home() {
               </Card>
               <Card>
                 <CardContent>
-                  <img
+                  <Image
                     alt="BeOp"
                     className="rounded-t-lg"
                     src="/beop.webp"
+                    width={1920}
+                    height={1080}
                     style={{
                       aspectRatio: "16/9",
                       objectFit: "cover",
@@ -207,7 +214,7 @@ export default function Home() {
             <h2 className="text-3xl font-bold mb-8">My Skills</h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8">
               <div className="flex flex-col items-center">
-                <CloudIcon className="w-12 h-12 mb-2" />
+                <KubernetesIcon className="w-12 h-12 mb-2" />
                 <span className="text-gray-600 dark:text-gray-400">
                   Kubernetes
                 </span>
